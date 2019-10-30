@@ -1,0 +1,48 @@
+body{
+    background-image: url("https://wallpaperaccess.com/full/699670.png");
+    background-size: cover;
+
+}
+.headContainer {
+    padding-top: 10px;
+}
+.cardTop{
+    border: 0;
+}
+.cardBody{
+    padding-top: 10px;
+}
+.topImage {
+    width:20%;
+    border: 10px solid #FFBF03;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.formContainer{
+    padding-top: 5px;
+}
+.textBox{
+    font-size: 20px;    
+}
+.head{
+    color: Blue;
+}
+.outPutContainer{
+    margin-top: 10px;
+}
+.outputText1{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.outputText2{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 60px;
+}
+ul{
+    padding-left: 0px;
+}

@@ -1,0 +1,56 @@
+<div class="container headContainer">
+  <div class="col-md-6 mx-auto">
+    <blockquote class="blockquote mb-0">
+      <h3 class="text-center" style="margin-bottom: 0px;">“Eat clean to stay fit, have a burger to stay sane.”</h3>
+      <footer class="blockquote-footer text-right"><cite title="Source Title">Gigi Hadid</cite></footer>
+    </blockquote>
+    <img src="https://media0.giphy.com/media/ToMjGplHPoYqSg7oACc/source.gif" class="rounded mx-auto d-block topImage">
+  </div>
+</div>
+
+<div class="container formContainer">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 formText">
+      <form class="create-form form-inline ">
+        <div class="form-group mx-sm-2 mb-2">
+          <label for="ca" class="text-danger textBox">New Burgers to Try: </label>
+        </div>
+        <div class="form-group mx-sm-2 mb-2 ">
+          <input type="text" id="ca" class="form-control" name="burger_name" placeholder="What's Yummy?">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 buttonCss">Add Burger</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+
+<div class="container outPutContainer">
+  <div class="row justify-content-md-center text-center">
+    <div class="col-4">
+      <h4 class=" font-weight-bold head">Need to Try</h4>
+      <ul>
+        {{#each burger}}
+        {{#unless devoured}}
+        <p class="outputText1 in-line text-left"> {{id}}. {{burgers_name}}
+          <button class="eatBurger btn btn-primary mb-2" data-id="{{id}}" data-name="{{burgers_name}}">Eat It</button>
+        </p>
+
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-1 huh"></div>
+    <div class="col-4">
+      <h4 class="font-weight-bold head">Already Eaten</h4>
+      <ul>
+        {{#each burger}}
+        {{#if devoured}}
+        <p class="outputText2 text-left">{{id}}. {{burgers_name}}</p>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
